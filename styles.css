@@ -1,16 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #b6ecdc;
-    color: #333;
+    color: black;
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
     background: #dcb6ec;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 1rem;
+    padding: 20px 40px;
 }
 
 .main {
@@ -21,26 +20,49 @@ body {
 .logo-title {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 20px;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .slogan {
-    font-style: italic;
-    color: #a0522d;
+    font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
+    font-size: 80px;
+    color: #b6ecdc;
+    text-shadow: 2px 4px 12px black, 0 2px 8px black, 0 1px 0 black;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 .nav-list {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin-top: 20px;
 }
 
 .nav-list a {
+    display: flex;
+    margin: 8px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 22px;
+    background-color: #ecb6c6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-list a:hover {
+    background-color: #b6ecdc;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 
 .intro {
@@ -96,9 +118,13 @@ body {
     font-size: 0.9rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   nav[aria-label="Main navigation"] {
     display: none;
+  }
+  .slogan {
+    font-size: 50px;
+    text-align: center;
   }
   .intro video {
     display: none;
