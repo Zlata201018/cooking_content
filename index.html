@@ -8,35 +8,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header" role="banner">
-        <div class="logo-title" style="display: flex; align-items: center;">
-            <img class="logo-img" src="media/logo.jpg" alt="Cookbook Logo" width="100" height="auto">
-            <div>
-                <p class="slogan">Sweet moments, creating at home!</p>
+    <header role="banner">
+        <div class="header-block">
+            <div class="logo-title" style="display: flex; align-items: center;">
+                <img class="logo-img" src="media/logo.jpg" alt="Cookbook Logo" width="100" height="auto">
+                <div>
+                    <p class="slogan">Sweet moments, creating at home!</p>
+                </div>
             </div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="recipes/doughnut.html">Doughnut</a></li>
+                    <li><a href="recipes/cake.html">Cake</a></li>
+                    <li><a href="recipes/isecream.html">Ice Cream</a></li>
+                    <li><a href="recipes/cookies.html">Cookies</a></li>
+                    <li><a href="recipes/chokolate.html">Chocolate</a></li>
+                    <li><a href="recipes/milkshake.html">Milk Shake</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav aria-label="Main navigation">
-            <ul class="nav-list">
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="recipes/doughnut.html">Doughnut</a></li>
-                <li><a href="recipes/cake.html">Cake</a></li>
-                <li><a href="recipes/isecream.html">Ice Cream</a></li>
-                <li><a href="recipes/cookies.html">Cookies</a></li>
-                <li><a href="recipes/chokolate.html">Chocolate</a></li>
-                <li><a href="recipes/milkshake.html">Milk Shake</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section class="intro">
-            <h1>Welcome to Cookbook of Famous Sweets!</h1>
-            <p>Baking is a fascinating and rewarding hobby that brings joy to everyday life. It all begins with the excitement of discovering a new recipe, followed by the fun of selecting fresh ingredients. As you measure, mix, and bake, you not only create delicious treats but also enjoy a relaxing and creative process. Each step is an opportunity to learn, experiment, and express yourself.</p>
-            <p>Whether you are a beginner or an experienced baker, making sweets at home lets you surprise your loved ones and fill your home with wonderful aromas. Here, I collect the tastiest and most famous sweet recipes from around the world, all of which you can easily prepare in your own kitchen. Explore, bake, and enjoy the magic of homemade desserts!</p>
-            <video autoplay loop muted style="width: 100%; max-width: 600px;">
+    <section class="intro">
+        <h1>Welcome to Cookbook of Famous Sweets!</h1>
+        <p>
+        Baking is a fascinating and rewarding hobby that brings joy to everyday life.
+        It all begins with the excitement of discovering a new recipe, followed by the fun of selecting fresh ingredients.
+        </p>
+        <p>
+            As you measure, mix, and bake, you not only create delicious treats but also enjoy a relaxing and creative process.
+            Each step is an opportunity to learn, experiment, and express yourself.
+        </p>
+        <p>
+            Whether you are a beginner or an experienced baker, making sweets at home lets you surprise your loved ones and fill your home with wonderful aromas.
+        </p>
+        <p>
+            Here, I collect the tastiest and most famous sweet recipes from around the world, all of which you can easily prepare in your own kitchen.
+        </p>
+        <div class="intro-video">
+            <video autoplay loop muted>
                 <source src="media/sweets.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
-        </section>
+        </div>
+        <h2>
+            Explore, bake, and enjoy the magic of homemade desserts!
+        </h2>
+    </section>
         <section class="recipes">
             <h2>Featured Recipes</h2>
             <div class="recipes-grid">

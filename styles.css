@@ -6,13 +6,18 @@ body {
     margin: 0;
 }
 
-.header {
+header {
     background: #dcb6ec;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 20px 40px;
 }
 
-.main {
+.header-block {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+main {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -30,7 +35,7 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
-.slogan {
+.slogan{
     font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
     font-size: 80px;
     color: #b6ecdc;
@@ -71,10 +76,41 @@ body {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 18px;
+}
+
+h1, h2{
+    font-style: italic;
+    letter-spacing: 4px;
+    margin: 0;
+    text-align: center;
+}
+
+.intro-video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,1);
 }
 
 .recipes {
     padding: 2rem;
+}
+
+.recipes h2 {
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 20px;
 }
 
 .recipes-grid {
