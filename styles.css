@@ -1,14 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background: #fff8f0;
+    background: #b6ecdc;
     color: #333;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
-    background: #f7c59f;
+    background: #dcb6ec;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 1rem;
+}
+
+.main {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .logo-title {
@@ -37,8 +44,11 @@ body {
 }
 
 .intro {
+    margin: 40px;
     padding: 2rem;
-    background: #fff3e6;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .recipes {
@@ -67,17 +77,30 @@ body {
 
 .recipe-card:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    background-color: #ecb6c6;
 }
 
 .recipe-card img {
     width: 80px;
-    height: auto;
-    margin-bottom: 0.5rem;
+    height: 80px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    margin-bottom: 20px;
+    border-radius: 8px
 }
 
 .footer {
-    background: #f7c59f;
+    background: #dcb6ec;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  nav[aria-label="Main navigation"] {
+    display: none;
+  }
+  .intro video {
+    display: none;
+  }
 }
