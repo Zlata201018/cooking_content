@@ -3,63 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookbook</title>
+    <meta name="description" content="A collection of the world's most famous and delicious sweet recipes you can make at home.">
+    <title>Cookbook of Famous Sweets</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="media/logo.jpg" alt="Cookbook Logo" style="width: 100px; height: auto;">
-        <p class="slogan">Sweet moments, creating at home!</p>
+    <header class="header" role="banner">
+        <div class="logo-title" style="display: flex; align-items: center;">
+            <img src="media/logo.jpg" alt="Cookbook Logo" width="100" height="auto">
+            <div>
+                <h1>Cookbook of Famous Sweets</h1>
+                <p class="slogan">Sweet moments, creating at home!</p>
+            </div>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="recipes/doughnut.html">Doughnut</a></li>
+                <li><a href="recipes/cake.html">Cake</a></li>
+                <li><a href="recipes/isecream.html">Ice Cream</a></li>
+                <li><a href="recipes/cookies.html">Cookies</a></li>
+                <li><a href="recipes/chokolate.html">Chocolate</a></li>
+                <li><a href="recipes/milkshake.html">Milk Shake</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h1>Welcome to the cookbook of famous sweets</h1>
-        <p>Baking is a fascinating and rewarding hobby that brings joy to everyday life. It all begins with the excitement of discovering a new recipe, followed by the fun of selecting fresh ingredients. As you measure, mix, and bake, you not only create delicious treats but also enjoy a relaxing and creative process. Each step is an opportunity to learn, experiment, and express yourself.</p>
-        <p>Whether you are a beginner or an experienced baker, making sweets at home lets you surprise your loved ones and fill your home with wonderful aromas. Here, I collect the tastiest and most famous sweet recipes from around the world, all of which you can easily prepare in your own kitchen. Explore, bake, and enjoy the magic of homemade desserts!</p>
-        <video controls autoplay loop muted style="width: 100%; max-width: 600px;">
-            <source src="media/sweets.mp4" type="video/mp4"/>
-        </video>
-
-    <section>
-        <h2>Featured Recipes</h2>
-        <p>Discover some of the most beloved and timeless sweet treats from around the world! Each recipe is carefully selected for its unique flavor and ease of preparation, so you can enjoy baking at home no matter your skill level. From rich chocolate cakes to classic apple pies, these desserts are perfect for family gatherings, celebrations, or simply treating yourself to something special. Click on any recipe to explore step-by-step instructions and helpful tips for perfect results every time.</p>
-        <ul>
-            <li>
-                <a href="recipes/doughnut.html">
-                    Doughnut
-                    <img src="media/doughnut.png" alt="Doughnut" style="width: 50px; height: auto;">
+        <section class="intro">
+            <h2>Welcome!</h2>
+            <p>Baking is a fascinating and rewarding hobby that brings joy to everyday life. It all begins with the excitement of discovering a new recipe, followed by the fun of selecting fresh ingredients. As you measure, mix, and bake, you not only create delicious treats but also enjoy a relaxing and creative process. Each step is an opportunity to learn, experiment, and express yourself.</p>
+            <p>Whether you are a beginner or an experienced baker, making sweets at home lets you surprise your loved ones and fill your home with wonderful aromas. Here, I collect the tastiest and most famous sweet recipes from around the world, all of which you can easily prepare in your own kitchen. Explore, bake, and enjoy the magic of homemade desserts!</p>
+            <video controls autoplay loop muted style="width: 100%; max-width: 600px;">
+                <source src="media/sweets.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="recipes">
+            <h2>Featured Recipes</h2>
+            <div class="recipes-grid">
+                <a href="recipes/doughnut.html" class="recipe-card">
+                    <img src="media/doughnut.png" alt="Doughnut">
+                    <span>Doughnut</span>
                 </a>
-            </li>
-            <li>
-                <a href="recipes/cake.html">
-                    Cake
-                    <img src="media/cake.png" alt="Cake" style="width: 50px; height: auto;">
+                <a href="recipes/cake.html" class="recipe-card">
+                    <img src="media/cake.png" alt="Cake">
+                    <span>Cake</span>
                 </a>
-            </li>
-            <li>
-                <a href="recipes/isecream.html">
-                    Ise cream
-                    <img src="media/icecream.png" alt="Ice cream" style="width: 50px; height: auto;">
+                <a href="recipes/isecream.html" class="recipe-card">
+                    <img src="media/icecream.png" alt="Ice Cream">
+                    <span>Ice Cream</span>
                 </a>
-            </li>
-            <li>
-                <a href="recipes/cookies.html">
-                    Cookies
-                    <img src="media/cookies.png" alt="Cookies" style="width: 50px; height: auto;">
+                <a href="recipes/cookies.html" class="recipe-card">
+                    <img src="media/cookies.png" alt="Cookies">
+                    <span>Cookies</span>
                 </a>
-            </li>
-            <li>
-                <a href="recipes/chokolate.html">
-                    Chocolate
-                    <img src="media/chocolate.png" alt="Chocolate" style="width: 50px; height: auto;">
+                <a href="recipes/chokolate.html" class="recipe-card">
+                    <img src="media/chocolate.png" alt="Chocolate">
+                    <span>Chocolate</span>
                 </a>
-            </li>
-            <li>
-                <a href="recipes/milkshake.html">
-                    Milk shake
-                    <img src="media/milkshake.png" alt="Milk shake" style="width: 50px; height: auto;">
+                <a href="recipes/milkshake.html" class="recipe-card">
+                    <img src="media/milkshake.png" alt="Milk Shake">
+                    <span>Milk Shake</span>
                 </a>
-            </li>
-        </ul>
-    </section>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <p>&copy; 2025 Cookbook of Famous Sweets. All rights reserved.</p>
+    </footer>
 </body>
 </html>

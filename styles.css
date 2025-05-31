@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #f7c59f;
+    padding: 1rem;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slogan {
+    font-style: italic;
+    color: #a0522d;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.intro {
+    padding: 2rem;
+    background: #fff3e6;
+}
+
+.recipes {
+    padding: 2rem;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: box-shadow 0.2s;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.recipe-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    background: #f7c59f;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
