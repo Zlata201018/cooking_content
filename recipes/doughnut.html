@@ -3,35 +3,59 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doughnut</title>
+    <title>Doughnut Recipe | Cookbook of Famous Sweets</title>
+    <meta name="description" content="Step-by-step doughnut recipe with ingredients, instructions, and tips. Part of the Cookbook of Famous Sweets.">
+    <link rel="stylesheet" href="/styles/doughnut.css">
 </head>
 <body>
+    <header role="banner">
+        <div class="header-block">
+            <div class="logo-title">
+                <img class="logo-img" src="/media/logo.jpg" alt="Cookbook Logo">
+                <p class="slogan">Sweet moments, creating at home!</p>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/recipes/doughnut.html" aria-current="page">Doughnut</a></li>
+                    <li><a href="/recipes/cake.html">Cake</a></li>
+                    <li><a href="/recipes/isecream.html">Ice Cream</a></li>
+                    <li><a href="/recipes/cookies.html">Cookies</a></li>
+                    <li><a href="/recipes/chokolate.html">Chocolate</a></li>
+                    <li><a href="/recipes/milkshake.html">Milk Shake</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <a href="/index.html">← Back to Home</a>
-        <h1>Doughnut Recipe</h1>
         <section class="recipe-details">
-            <img src="https://m.media-amazon.com/images/I/91n5fdz7-zL.jpg" alt="Delicious Doughnuts" width="600" height="400">
-            <h2>Ingredients</h2>
-            <table class="ingredients-table">
-                <thead>
-                    <tr>
-                        <th>Ingredient</th>
-                        <th>Amount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>All-purpose flour</td><td>2 cups</td></tr>
-                    <tr><td>Sugar</td><td>1/2 cup</td></tr>
-                    <tr><td>Salt</td><td>1/2 teaspoon</td></tr>
-                    <tr><td>Baking powder</td><td>1 tablespoon</td></tr>
-                    <tr><td>Ground nutmeg</td><td>1/2 teaspoon</td></tr>
-                    <tr><td>Milk</td><td>1/2 cup</td></tr>
-                    <tr><td>Large eggs</td><td>2</td></tr>
-                    <tr><td>Melted butter</td><td>1/4 cup</td></tr>
-                    <tr><td>Oil for frying</td><td>as needed</td></tr>
-                </tbody>
-            </table>
-
+            <h1>Doughnut Recipe</h1>
+            <h3>Classic homemade doughnuts, soft and delicious!</h3>
+            <div class="ingredients">
+                <img class="ingredients-image" src="https://m.media-amazon.com/images/I/91n5fdz7-zL.jpg" alt="Delicious Doughnuts">
+                <div class="ingredients-block">
+                    <h2>Ingredients</h2>
+                    <table class="ingredients-table" role="table" aria-label="Doughnut Ingredients">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>All-purpose flour</td><td>2 cups</td></tr>
+                            <tr><td>Sugar</td><td>1/2 cup</td></tr>
+                            <tr><td>Salt</td><td>1/2 teaspoon</td></tr>
+                            <tr><td>Baking powder</td><td>1 tablespoon</td></tr>
+                            <tr><td>Ground nutmeg</td><td>1/2 teaspoon</td></tr>
+                            <tr><td>Milk</td><td>1/2 cup</td></tr>
+                            <tr><td>Large eggs</td><td>2</td></tr>
+                            <tr><td>Melted butter</td><td>1/4 cup</td></tr>
+                            <tr><td>Oil for frying</td><td>as needed</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <h2>Instructions</h2>
             <ol>
                 <li>In a large bowl, mix the flour, sugar, salt, baking powder, and nutmeg.</li>
@@ -41,17 +65,19 @@
                 <li>Scoop dough into rings and fry until golden brown on both sides.</li>
                 <li>Drain on paper towels and dust with powdered sugar or glaze as desired.</li>
             </ol>
-
-            <h2>Enjoy your homemade doughnuts!</h2>
         </section>
         <section class="recipe-comments">
             <h2>Comments</h2>
             <form id="comment-form">
                 <label for="comment">Leave a comment:</label>
-                <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                <textarea id="comment" name="comment" rows="8" cols="50" aria-label="Comment"></textarea>
                 <button type="submit">Submit</button>
             </form>
+            <img src="/media/cook.png" alt="Chef Cooking" class="chef-image">
         </section>
     </main>
+    <footer>
+        <p>&copy; 2025 Cookbook of Famous Sweets</p>
+    </footer>
 </body>
 </html>

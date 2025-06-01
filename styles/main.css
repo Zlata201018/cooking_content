@@ -67,7 +67,11 @@ main {
 
 .nav-list a:hover {
     background-color: #b6ecdc;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.nav-list a[aria-current="page"] {
+    background-color: #b6ecdc;
 }
 
 .intro {
